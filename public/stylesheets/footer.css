@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Raleway:wght@300;400;700&display=swap');
+
+:root{
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: #667eea;
+    --color-secondary: #764ba2;
+    --boton-padding: 20px 40px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* /fOOTER/ */
+
+.footer{
+    background-color: var(--color-primary);
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.footer__title{
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}   
+
+.footer__icons{
+    display: flex;
+    justify-content: space-evenly;
+}
