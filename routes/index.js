@@ -23,8 +23,6 @@ router.get('/error', function(req, res, next) {
   res.render('error');
 });
 
-
-
 /* LOGIN y RUTAS EXTERNAS */
 router.get('/', function(req, res, next) {
   res.render('login-Register', {title: "Book Rental"});

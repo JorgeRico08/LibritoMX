@@ -6,11 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %></title>
 
-</head>
+</head> 
 <body>
   <%- include("partials/head") %>
   <%- include("partials/nav") %>
   <%- include("partials/button") %>
+
+  <%- include('partials/style-header'); %>
+  <header class="hero">
+          <div class="containers">
+              <section class="hero__container">
+                  <div class="hero__texts">
+                      <h1 class="hero_title"><strong>LibritoMX</strong></h1>
+                      <h2 class="hero__subtitle">La libreria favorita de todo Mexico</h2>
+                      <h4 class="hero__sub">¡Comparte con nosotros tu gusto por la lectura!</h4>
+                  </div>
+              </section>
+          </div>
+          <div class="hero__wave" style="overflow: hidden">
+              <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+                  <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                      style="stroke: none; fill: #fff"></path>
+              </svg>
+          </div>
+      </header>
+
   <div style="margin-top: 1rem;" class="container">
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -18,7 +38,18 @@
       </ol>
     </nav>
   </div>
+<style>
+  .carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+}
 
+.carousel-inner{
+ height: 200px;
+}
+
+
+</style>
   <div class="container">
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
